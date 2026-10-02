@@ -3,58 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms of Use — Whizwheel</title>
+  <title>Whizwheel — Terms of use</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }
-    h1, h2 { font-weight: 600; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
-    a { color: #4B5563; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root { --bg: #F5F4EE; --ink: #111111; --band: #FFD21F; --card: #FFFFFF; --muted: #4A4A44; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000000; --ink: #F2F2EA; --card: #141414; --muted: #B8B8AE; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 -apple-system, system-ui, "Hiragino Sans", "Yu Gothic UI", sans-serif; overflow-wrap: anywhere; }
+    .band { background: var(--band); color: #111111; border-bottom: 4px solid #111111; padding: 18px 16px 20px; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .band nav { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; font-weight: 700; }
+    .band a { color: #111111; }
+    .band h1 { margin: 14px 0 2px; font-size: 2rem; line-height: 1.15; font-weight: 900; }
+    .band .rev { margin: 0; font-size: 0.9rem; }
+    main { max-width: 760px; margin: 24px auto 32px; padding: 0 16px; }
+    .lead { font-size: 1.05rem; margin: 0 0 24px; }
+    section { background: var(--card); border: 3px solid var(--ink); margin: 0 0 20px; padding: 0 18px 12px; }
+    section > h2 { margin: 0 -18px 12px; padding: 8px 18px; background: var(--band); color: #111111; border-bottom: 3px solid var(--ink); font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 900; }
     ul { padding-left: 1.2rem; }
-    .meta { color: #666; font-size: 0.95rem; }
-    footer { margin-top: 3rem; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    li { margin: 0.45rem 0; }
+    a { color: inherit; text-underline-offset: 2px; }
+    time { white-space: nowrap; }
+    footer { max-width: 760px; margin: 0 auto 40px; padding: 0 16px; font-size: 0.85rem; color: var(--muted); }
   </style>
 </head>
 <body>
-  <p class="meta"><a href="index.html">&larr; Legal &amp; Support</a> | <a href="terms-ja.html">日本語</a></p>
-  <h1>Terms of Use — Whizwheel</h1>
-  <p class="meta">Effective date: 2026-08-25</p>
-  <p>These terms govern your use of the Whizwheel iOS app (the &quot;App&quot;), published by Naruberio LLC (&quot;we&quot;, &quot;us&quot;). By using the App you agree to them.</p>
+  <header class="band">
+    <div class="wrap">
+      <nav><a href="index.html">Whizwheel: all pages</a><a href="terms-ja.html" lang="ja">日本語で読む</a></nav>
+      <h1>Terms of use</h1>
+      <p class="rev">Whizwheel for iPhone and iPad · last revised <time datetime="2026-10-03">2026-10-03</time></p>
+    </div>
+  </header>
+  <main>
+    <p class="lead">These terms are an agreement between you and Naruberio LLC ("we", "us"), the developer of Whizwheel. They sit alongside Apple's own terms for apps bought on the App Store. By using Whizwheel you agree to these terms. If you do not accept them, please do not use it.</p>
 
-  <h2>1. License</h2>
-  <p>We grant you a personal, non-exclusive, non-transferable license to use the App on devices you own or control, as permitted by the Apple Media Services Terms and Conditions. You may not resell, redistribute, reverse engineer, or attempt to extract the App's source code, except where such restriction is prohibited by law.</p>
+    <section>
+      <h2>Before you rely on a result in flight</h2>
+      <p>Whizwheel works the E6B problems (wind, airspeed, altitude, time, speed and distance, adding and subtracting flight times, fuel, weight and balance, climb and descent, unit conversion) from the figures you enter. Its answers can only be as good as those figures, and it cannot see your aircraft or the weather.</p>
+      <ul>
+        <li>Check every figure you intend to fly with against the aircraft's approved flight manual or POH, its weight-and-balance records and its performance charts. Where Whizwheel and that approved data differ, follow the approved data.</li>
+        <li>Whizwheel is a calculator. It is neither a navigation system nor an electronic flight bag: it has no maps, charts or weather, cannot file flight plans, and never connects to an aircraft or to avionics.</li>
+        <li>No aviation authority has certified, approved or endorsed Whizwheel, and it has no tie to any aircraft or avionics manufacturer.</li>
+        <li>It cannot go with you into an FAA knowledge test, because personal electronic devices are kept out of the testing room.</li>
+        <li>You are responsible for checking every figure you rely on and for following the rules that apply to your flight. When you fly as pilot in command, the decisions are yours.</li>
+      </ul>
+    </section>
 
-  <h2>2. What the App does</h2>
-  <p>The App performs aeronautical calculations from values you type in, using the standard atmosphere and the standard airspeed, moment and descent relations, and displays the results. All calculation happens on your device.</p>
+    <section>
+      <h2>Your license</h2>
+      <p>Buying Whizwheel gives you a personal right to run it on Apple devices you own or control, within the App Store usage rules set out in Apple's Media Services Terms and Conditions. The right is non-exclusive and cannot be handed to someone else. You may not resell or redistribute the App, or reverse engineer, decompile or disassemble it or attempt to extract its source code, except where the law of your country allows this despite this paragraph.</p>
+    </section>
 
-  <h2>3. What the App is not</h2>
-  <ul>
-    <li>The App is <strong>not a navigation system and not an electronic flight bag</strong>. It has no moving map, no charts, no weather decoding and no flight plan filing, and it does not connect to an aircraft or to any avionics.</li>
-    <li>The App is <strong>not a substitute for your aircraft's approved flight manual, weight and balance data, or performance charts</strong>. Where the two disagree, the approved data governs.</li>
-    <li>The App is <strong>not approved for use during an FAA knowledge test</strong>: personal electronic devices are not permitted in the testing room.</li>
-    <li>The App is not certified, approved or endorsed by any aviation authority, and is not affiliated with any aircraft or avionics manufacturer.</li>
-  </ul>
+    <section>
+      <h2>No guarantee</h2>
+      <p>Whizwheel is provided "as is", without warranty of any kind, express or implied. We do not promise that it will always run, that it is free of bugs, that it suits a particular purpose, or that its results are accurate or suitable for any decision you make.</p>
+    </section>
 
-  <h2>4. Your responsibilities</h2>
-  <p>You are responsible for verifying every value you rely on for flight against your aircraft's approved data, and for complying with the regulations that apply to your flight. As pilot in command, the decision remains yours.</p>
+    <section>
+      <h2>Our liability</h2>
+      <p>As far as the law allows, Naruberio LLC is not responsible for losses that come from using Whizwheel or from being unable to use it. That covers lost profit, lost data, missed opportunities and harm that follows from a decision based on its results. Nothing in this section cuts back liability that the law says cannot be cut back, such as liability for death or personal injury caused by our negligence.</p>
+    </section>
 
-  <h2>5. No warranty</h2>
-  <p>The App is provided &quot;as is&quot;, without warranty of any kind. We do not warrant that the App will be uninterrupted, error-free, or fit for a particular purpose, or that its results will be accurate or suitable for any decision you make.</p>
+    <section>
+      <h2>Payment and refunds</h2>
+      <p>You pay for Whizwheel once. It has no in-app purchases and no subscription. Apple handles the sale and payment, so refund requests go to Apple under Apple's terms; we have no means of refunding you ourselves.</p>
+    </section>
 
-  <h2>6. Limitation of liability</h2>
-  <p>To the maximum extent permitted by law, we are not liable for any loss (including lost profits, lost data, lost opportunity, or damage arising from a decision made in reliance on the App) arising from your use of, or inability to use, the App. Nothing here limits liability that cannot be limited by law, including liability for death or personal injury caused by negligence.</p>
+    <section>
+      <h2>Changes</h2>
+      <p>We may update the App and may revise these terms. The date at the top identifies the current version. If you go on using Whizwheel after a revision, the revised terms apply to you.</p>
+    </section>
 
-  <h2>7. Purchases and refunds</h2>
-  <p>The App is a one-time purchase with no in-app purchases and no subscription. Purchases and refunds are handled by Apple under the Apple Media Services Terms and Conditions; we cannot issue refunds directly.</p>
+    <section>
+      <h2>Which law applies</h2>
+      <p>Japanese law governs these terms. Any dispute arising from these terms or from Whizwheel is subject to the exclusive jurisdiction of the Tokyo District Court as the court of first instance. If you are a consumer and the law where you live gives you protections that no contract can take away, these terms leave those protections in place.</p>
+    </section>
 
-  <h2>8. Changes and termination</h2>
-  <p>We may update the App or these terms. Material changes to these terms will be reflected by updating the effective date above. Continued use after a change means you accept it.</p>
-
-  <h2>9. Governing law</h2>
-  <p>These terms are governed by the laws of Japan. The Tokyo District Court shall have exclusive jurisdiction as the court of first instance for any dispute arising from them. If you are a consumer resident in a jurisdiction whose law grants you rights that cannot be excluded by agreement, nothing in these terms limits those rights.</p>
-
-  <h2>10. Contact</h2>
-  <p><a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></p>
-  <footer>Whizwheel is published by Naruberio LLC. Contact: <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
+    <section>
+      <h2>Questions</h2>
+      <p>Write to <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>Naruberio LLC, developer of Whizwheel · <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
 </body>
 </html>
