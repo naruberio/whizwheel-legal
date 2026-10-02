@@ -3,52 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Whizwheel</title>
+  <title>Whizwheel — Privacy notice</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }
-    h1, h2 { font-weight: 600; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
-    a { color: #4B5563; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 1.2rem; }
-    .meta { color: #666; font-size: 0.95rem; }
-    footer { margin-top: 3rem; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    :root { --bg: #F5F4EE; --ink: #111111; --band: #FFD21F; --card: #FFFFFF; --muted: #4A4A44; --rule: #D8D6CC; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000000; --ink: #F2F2EA; --card: #141414; --muted: #B8B8AE; --rule: #333333; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 -apple-system, system-ui, "Hiragino Sans", "Yu Gothic UI", sans-serif; overflow-wrap: anywhere; }
+    .band { background: var(--band); color: #111111; border-bottom: 4px solid #111111; padding: 18px 16px 20px; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .band nav { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; font-weight: 700; }
+    .band a { color: #111111; }
+    .band h1 { margin: 14px 0 2px; font-size: 2rem; line-height: 1.15; font-weight: 900; }
+    .band .rev { margin: 0; font-size: 0.9rem; }
+    main { max-width: 760px; margin: 24px auto 32px; padding: 0 16px; }
+    .lead { font-size: 1.05rem; margin: 0 0 24px; }
+    section { background: var(--card); border: 3px solid var(--ink); margin: 0 0 20px; padding: 0 18px 12px; }
+    section > h2 { margin: 0 -18px 12px; padding: 8px 18px; background: var(--band); color: #111111; border-bottom: 3px solid var(--ink); font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 900; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; vertical-align: top; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+    th { width: 38%; padding-right: 14px; font-weight: 800; overflow-wrap: normal; }
+    time { white-space: nowrap; }
+    a { color: inherit; text-underline-offset: 2px; }
+    footer { max-width: 760px; margin: 0 auto 40px; padding: 0 16px; font-size: 0.85rem; color: var(--muted); }
   </style>
 </head>
 <body>
-  <p class="meta"><a href="index.html">&larr; Legal &amp; Support</a> | <a href="privacy-policy-ja.html">日本語</a></p>
-  <h1>Privacy Policy — Whizwheel</h1>
-  <p class="meta">Effective date: 2026-08-25</p>
-  <p>Whizwheel (the &quot;App&quot;) is published by Naruberio LLC (&quot;we&quot;, &quot;us&quot;). This policy explains what the App does and does not do with data.</p>
+  <header class="band">
+    <div class="wrap">
+      <nav><a href="index.html">Whizwheel: all pages</a><a href="privacy-policy-ja.html" lang="ja">日本語で読む</a></nav>
+      <h1>Privacy notice</h1>
+      <p class="rev">Whizwheel for iPhone and iPad · last revised <time datetime="2026-10-02">2026-10-02</time></p>
+    </div>
+  </header>
+  <main>
+    <p class="lead">Whizwheel is an E6B flight computer that runs entirely on your iPhone or iPad. This page lists what it keeps, what it does not use, and how information about you could reach its developer, Naruberio LLC ("we", "us"). The App itself sends us nothing. The only thing that comes to us directly from you is an email you decide to send.</p>
 
-  <h2>1. Summary</h2>
-  <ul>
-    <li><strong>We do not collect, transmit, or sell any data.</strong></li>
-    <li>The App <strong>never connects to the network</strong> and contains no analytics, advertising, or tracking SDK.</li>
-    <li>The App requests <strong>no permissions</strong>. It does not use your location. There is no account and no login.</li>
-    <li>The only thing stored is the <strong>aircraft profiles you create</strong>, and they stay on your device.</li>
-  </ul>
+    <section>
+      <h2>At a glance</h2>
+      <table>
+        <tr><th>Internet connection</th><td>Not used. Every tool works in airplane mode.</td></tr>
+        <tr><th>Permissions</th><td>None requested: no location, camera, photos, contacts or microphone.</td></tr>
+        <tr><th>Account or sign-in</th><td>There isn't one.</td></tr>
+        <tr><th>Ads, analytics, crash reporting, tracking</th><td>None built in.</td></tr>
+        <tr><th>Saved on your device</th><td>Aircraft profiles you choose to save.</td></tr>
+        <tr><th>What reaches us</th><td>Nothing from the App itself. From you directly, only emails you write to us. Apple separately sends us App Store totals (see Buying Whizwheel).</td></tr>
+      </table>
+    </section>
 
-  <h2>2. Data stored on your device</h2>
-  <p>Only the aircraft profiles you choose to save: their name, station names, arms, weights and the CG limits you enter. They are written to this device's app storage, are never transmitted, and are deleted when you delete the profile or the App. The App writes no other files, no keychain entries, and no advertising identifier.</p>
+    <section>
+      <h2>Aircraft profiles</h2>
+      <p>A profile keeps these items from the weight-and-balance screen: the profile name, each station's label, weight and arm, which stations are fuel tanks, and your maximum weight with the forward and aft CG limits, always in pounds and inches. It goes into Whizwheel's own storage area on the device. Delete a profile inside the App and the App no longer keeps or shows it; delete the App and every profile goes with it.</p>
+      <p>If iCloud Backup or a backup to your computer is switched on, iOS may copy this storage area into the device backup, as it does for most apps. That copy sits with Apple or on your computer. We have no way to open it.</p>
+    </section>
 
-  <h2>3. Data sent to us or to anyone else</h2>
-  <p>None. The App contains no networking code, so there is no channel through which it could send anything, even by accident.</p>
+    <section>
+      <h2>Numbers you type into the tools</h2>
+      <p>Apart from what you save as an aircraft profile, courses, airspeeds, altitudes, times and fuel figures stay in memory only while the App is open. They are not written to storage, and they are never sent anywhere.</p>
+    </section>
 
-  <h2>4. Purchases</h2>
-  <p>Whizwheel is a paid app with <strong>no in-app purchases</strong> and no subscription. Your purchase is processed entirely by <strong>Apple</strong>. The App itself contains no purchase, payment, or analytics SDK. We do not receive your name, email, or payment details. See Apple's privacy policy for how Apple handles payment data.</p>
+    <section>
+      <h2>Buying Whizwheel</h2>
+      <p>Whizwheel has one price on the App Store. There are no in-app purchases, no subscription and no payment code inside the App. Apple takes the payment. What Apple passes to us are App Store totals, such as sales by country, never buyer details, so your name, Apple Account and card never come to us. If you have turned on Share With App Developers in your device settings, Apple also gives us crash reports and usage statistics that do not identify you. Apple's privacy policy explains how Apple treats payment information.</p>
+    </section>
 
-  <h2>5. Children's privacy</h2>
-  <p>The App does not knowingly collect any data from anyone, including children under 13/16. There are no ads, no data collection, and no third-party content.</p>
+    <section>
+      <h2>Emailing us</h2>
+      <p>Write to <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a> and we receive your address and whatever the message contains. We use them to reply to you and for nothing else. We do not sell or share them, and we will delete the conversation if you ask.</p>
+    </section>
 
-  <h2>6. Your rights (GDPR / CCPA / APPI)</h2>
-  <p>Because we neither collect nor store personal data, there is no personal data for us to access, correct, port, or delete. Anything the App keeps is on your device and under your control: deleting the App removes it.</p>
+    <section>
+      <h2>Children</h2>
+      <p>Whizwheel gathers no information from anyone, so it gathers none from children. It shows no advertising and no outside content.</p>
+    </section>
 
-  <h2>7. Changes</h2>
-  <p>We may update this policy. Material changes will be reflected by updating the effective date above.</p>
+    <section>
+      <h2>Requests under GDPR, CCPA or Japan's APPI</h2>
+      <p>The App passes us no personal data, so for the App there is nothing for us to export, correct or erase. The profiles on your device are yours to edit or remove at any time. For emails you have sent us, write to the same address and we will carry out your request.</p>
+    </section>
 
-  <h2>8. Contact</h2>
-  <p>Questions: <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></p>
-  <footer>Whizwheel is published by Naruberio LLC. Contact: <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
+    <section>
+      <h2>Revisions</h2>
+      <p>If the way Whizwheel handles information changes, this notice is revised and the date at the top moves with it.</p>
+    </section>
+  </main>
+  <footer>Naruberio LLC, developer of Whizwheel · <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
 </body>
 </html>

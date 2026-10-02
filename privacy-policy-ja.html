@@ -3,52 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>プライバシーポリシー — Whizwheel</title>
+  <title>Whizwheel — プライバシーについて</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }
-    h1, h2 { font-weight: 600; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
-    a { color: #4B5563; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 1.2rem; }
-    .meta { color: #666; font-size: 0.95rem; }
-    footer { margin-top: 3rem; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    :root { --bg: #F5F4EE; --ink: #111111; --band: #FFD21F; --card: #FFFFFF; --muted: #4A4A44; --rule: #D8D6CC; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000000; --ink: #F2F2EA; --card: #141414; --muted: #B8B8AE; --rule: #333333; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.75 -apple-system, system-ui, "Hiragino Sans", "Yu Gothic UI", sans-serif; overflow-wrap: anywhere; }
+    .band { background: var(--band); color: #111111; border-bottom: 4px solid #111111; padding: 18px 16px 20px; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .band nav { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; font-weight: 700; }
+    .band a { color: #111111; }
+    .band h1 { margin: 14px 0 2px; font-size: 1.8rem; line-height: 1.25; font-weight: 900; }
+    .band .rev { margin: 0; font-size: 0.9rem; }
+    main { max-width: 760px; margin: 24px auto 32px; padding: 0 16px; }
+    .lead { font-size: 1.05rem; margin: 0 0 24px; }
+    section { background: var(--card); border: 3px solid var(--ink); margin: 0 0 20px; padding: 0 18px 12px; }
+    section > h2 { margin: 0 -18px 12px; padding: 8px 18px; background: var(--band); color: #111111; border-bottom: 3px solid var(--ink); font-size: 0.95rem; letter-spacing: 0.04em; font-weight: 900; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; vertical-align: top; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+    th { width: 38%; padding-right: 14px; font-weight: 800; overflow-wrap: normal; }
+    time { white-space: nowrap; }
+    a { color: inherit; text-underline-offset: 2px; }
+    footer { max-width: 760px; margin: 0 auto 40px; padding: 0 16px; font-size: 0.85rem; color: var(--muted); }
   </style>
 </head>
 <body>
-  <p class="meta"><a href="index.html">&larr; Legal &amp; Support</a> | <a href="privacy-policy.html">English</a></p>
-  <h1>プライバシーポリシー — Whizwheel</h1>
-  <p class="meta">発効日: 2026-08-25</p>
-  <p>Whizwheel（以下「本アプリ」）は Naruberio LLC（以下「当社」）が提供します。本ポリシーは、本アプリがデータについて何を行い、何を行わないかを説明するものです。</p>
+  <header class="band">
+    <div class="wrap">
+      <nav><a href="index.html">Whizwheel のページ一覧</a><a href="privacy-policy.html" lang="en">Read in English</a></nav>
+      <h1>プライバシーについて</h1>
+      <p class="rev">iPhone・iPad 用 Whizwheel ／ 最終改訂 <time datetime="2026-10-02">2026-10-02</time></p>
+    </div>
+  </header>
+  <main>
+    <p class="lead">Whizwheel は、iPhone・iPad の中だけで動く E6B 航空計算尺のアプリです。このページでは、アプリが端末に残すもの、使わないもの、そして開発元の Naruberio LLC（以下「私たち」）にお客様の情報が届きうる経路を説明します。アプリから私たちに届くものはありません。お客様から直接届く唯一の経路は、お客様が送ると決めたメールです。</p>
 
-  <h2>1. 要約</h2>
-  <ul>
-    <li><strong>いかなるデータも収集・送信・販売しません。</strong></li>
-    <li>本アプリは<strong>通信を一切行いません</strong>。解析・広告・トラッキングの SDK を含みません。</li>
-    <li>本アプリは<strong>権限を要求しません</strong>。位置情報も使いません。アカウントもログインもありません。</li>
-    <li>保存するのは<strong>利用者が作成した機体プロファイルだけ</strong>で、端末内にとどまります。</li>
-  </ul>
+    <section>
+      <h2>ひと目でわかる一覧</h2>
+      <table>
+        <tr><th>インターネット接続</th><td>使いません。機内モードでもすべてのツールが動きます。</td></tr>
+        <tr><th>アクセスの許可</th><td>求めません。位置情報・カメラ・写真・連絡先・マイクのどれも使いません。</td></tr>
+        <tr><th>アカウント・サインイン</th><td>ありません。</td></tr>
+        <tr><th>広告・解析・クラッシュ報告・トラッキング</th><td>組み込んでいません。</td></tr>
+        <tr><th>端末に残るもの</th><td>お客様が保存を選んだ機体プロファイルだけです。</td></tr>
+        <tr><th>私たちに届くもの</th><td>アプリからは何も届きません。お客様から直接届くのは、お客様からのメールだけです。Apple からは別に、販売の集計が届きます（「Whizwheel の購入」を参照）。</td></tr>
+      </table>
+    </section>
 
-  <h2>2. 端末に保存されるデータ</h2>
-  <p>利用者が保存を選んだ機体プロファイル（名称・ステーション名・アーム・重量・入力した重心限界）だけです。端末内のアプリ領域に書き込まれ、送信されることはなく、プロファイルまたは本アプリを削除すると消えます。それ以外のファイル・キーチェーン・広告識別子は書き込みません。</p>
+    <section>
+      <h2>機体プロファイル</h2>
+      <p>プロファイルに入るのは、重量重心の画面の次の項目です。プロファイル名、各ステーションの名前・重量・アームと燃料タンクの印、最大重量と前方・後方の重心限界で、単位はいつも lb と in です。書き込み先は端末の中の Whizwheel 専用の保存領域です。アプリの中でプロファイルを消すと、アプリはそのプロファイルを使わなくなり、表示もしなくなります。アプリを削除すれば、すべてのプロファイルが消えます。</p>
+      <p>iCloud バックアップやパソコンへのバックアップを有効にしていると、ほかの多くのアプリと同じく、この保存領域が iOS のバックアップに含まれることがあります。そのコピーを持っているのは Apple またはお客様のパソコンで、私たちが中を見る手段はありません。</p>
+    </section>
 
-  <h2>3. 当社または第三者へ送信されるデータ</h2>
-  <p>ありません。本アプリは通信のコードを持たないため、誤って送信する経路自体が存在しません。</p>
+    <section>
+      <h2>ツールに入力した数値</h2>
+      <p>機体プロファイルとして保存したものを除き、針路・対気速度・高度・時間・燃料などの入力値は、アプリを開いているあいだメモリに置かれるだけです。保存領域には書き込まれず、どこかへ送られることもありません。</p>
+    </section>
 
-  <h2>4. 購入について</h2>
-  <p>Whizwheel は買い切りの有料アプリで、<strong>アプリ内課金・サブスクリプションはありません</strong>。購入処理はすべて <strong>Apple</strong> が行います。本アプリは課金・決済・解析の SDK を含みません。当社が氏名・メールアドレス・支払い情報を受け取ることはありません。Apple による支払いデータの取り扱いは Apple のプライバシーポリシーをご確認ください。</p>
+    <section>
+      <h2>Whizwheel の購入</h2>
+      <p>Whizwheel の代金は App Store で一度払うだけです。アプリ内課金もサブスクリプションもなく、アプリの中に決済の仕組みは入っていません。代金を受け取るのは Apple です。Apple から私たちに届くのは、国別の販売数など、購入者を特定しない売上の集計です。購入した方のお名前・Apple アカウント・カードの情報が私たちに渡ることはありません。このほか、端末の設定で「App デベロッパと共有」をオンにしている方に限り、個人を特定しないクラッシュ報告と利用統計が Apple から届きます。支払い情報の扱いは Apple のプライバシーポリシーをご覧ください。</p>
+    </section>
 
-  <h2>5. 児童のプライバシー</h2>
-  <p>本アプリは、13 歳／16 歳未満を含むいかなる利用者からもデータを収集しません。広告・データ収集・第三者コンテンツはありません。</p>
+    <section>
+      <h2>メールでのお問い合わせ</h2>
+      <p><a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a> にメールをいただくと、私たちにはメールアドレスと本文が届きます。使うのは返信のためだけで、第三者に売ったり渡したりしません。ご希望があればやり取りを削除します。</p>
+    </section>
 
-  <h2>6. 利用者の権利（GDPR / CCPA / 個人情報保護法）</h2>
-  <p>当社は個人データを収集も保存もしていないため、開示・訂正・移転・削除の対象となる個人データが存在しません。本アプリが保持するものはすべて端末内にあり、利用者の管理下にあります（本アプリを削除すると消えます）。</p>
+    <section>
+      <h2>お子さまについて</h2>
+      <p>Whizwheel はどなたの情報も集めないので、お子さまの情報を集めることもありません。広告や外部のコンテンツも表示しません。</p>
+    </section>
 
-  <h2>7. 変更</h2>
-  <p>本ポリシーを更新する場合があります。重要な変更は上記の発効日の更新により示します。</p>
+    <section>
+      <h2>GDPR・CCPA・個人情報保護法にもとづくご請求</h2>
+      <p>アプリから私たちに個人データは届かないため、アプリについてはお渡し・訂正・消去できるものがありません。端末の中のプロファイルは、いつでもお客様ご自身で直したり消したりできます。お送りいただいたメールについては、同じアドレスにご連絡いただければご請求に応じます。</p>
+    </section>
 
-  <h2>8. お問い合わせ</h2>
-  <p><a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></p>
-  <footer>Whizwheel の提供元は Naruberio LLC です。連絡先: <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
+    <section>
+      <h2>このページの改訂</h2>
+      <p>Whizwheel の情報の扱いが変わるときは、このページを書き改め、冒頭の日付も新しくします。</p>
+    </section>
+  </main>
+  <footer>Whizwheel の開発元: Naruberio LLC ／ <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
 </body>
 </html>
