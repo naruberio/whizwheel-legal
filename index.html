@@ -3,36 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Whizwheel — Legal &amp; Support</title>
+  <title>Whizwheel — Pages</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }
-    h1, h2 { font-weight: 600; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
-    a { color: #4B5563; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 1.2rem; }
-    .meta { color: #666; font-size: 0.95rem; }
-    footer { margin-top: 3rem; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    :root { --bg: #F5F4EE; --ink: #111111; --band: #FFD21F; --card: #FFFFFF; --muted: #4A4A44; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000000; --ink: #F2F2EA; --card: #141414; --muted: #B8B8AE; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 -apple-system, system-ui, "Hiragino Sans", "Yu Gothic UI", sans-serif; overflow-wrap: anywhere; }
+    .band { background: var(--band); color: #111111; border-bottom: 4px solid #111111; padding: 22px 16px 24px; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .band .kicker { margin: 0; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    .band h1 { margin: 6px 0 4px; font-size: 2.4rem; line-height: 1.1; font-weight: 900; }
+    .band p { margin: 0; }
+    main { max-width: 760px; margin: 24px auto 32px; padding: 0 16px; }
+    .board { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .tile { display: block; background: var(--card); border: 3px solid var(--ink); text-decoration: none; color: inherit; }
+    .tile::before { content: ""; display: block; height: 10px; background: var(--band); border-bottom: 3px solid var(--ink); }
+    .tile span { display: block; padding: 10px 14px 0; font-size: 0.8rem; font-weight: 900; letter-spacing: 0.08em; }
+    .tile strong { display: block; padding: 2px 14px 2px; font-size: 1.15rem; font-weight: 900; }
+    .tile em { display: block; padding: 0 14px 12px; font-style: normal; font-size: 0.9rem; color: var(--muted); }
+    .tile:hover strong, .tile:focus-visible strong { text-decoration: underline; text-underline-offset: 3px; }
+    h2 { margin: 28px 0 10px; font-size: 0.95rem; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; }
+    footer { max-width: 760px; margin: 0 auto 40px; padding: 0 16px; font-size: 0.85rem; color: var(--muted); }
+    a { color: inherit; text-underline-offset: 2px; }
   </style>
 </head>
 <body>
-  <p class="meta">Naruberio LLC</p>
-  <h1>Whizwheel</h1>
-  <p>Legal documents and support resources for the <strong>Whizwheel</strong> iOS app — an E6B flight computer for iOS that solves wind, airspeed, altitude, time-speed-distance, fuel, weight and balance, descent and unit conversions on the device.</p>
+  <header class="band">
+    <div class="wrap">
+      <p class="kicker">For iPhone and iPad</p>
+      <h1>Whizwheel</h1>
+      <p>An E6B flight computer that works out its answers on the device, with no signal and no sign-in.</p>
+    </div>
+  </header>
+  <main>
+    <h2>In English</h2>
+    <div class="board">
+      <a class="tile" href="support.html"><span>HELP</span><strong>Support</strong><em>Using the tools, and how to reach us</em></a>
+      <a class="tile" href="privacy-policy.html"><span>DATA</span><strong>Privacy notice</strong><em>What the App keeps on your device</em></a>
+      <a class="tile" href="terms.html"><span>TERMS</span><strong>Terms of use</strong><em>Before you rely on a result in flight</em></a>
+    </div>
 
-  <h2>English</h2>
-  <ul>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms of Use</a></li>
-    <li><a href="support.html">Support</a></li>
-  </ul>
-
-  <h2>日本語</h2>
-  <ul>
-    <li><a href="privacy-policy-ja.html">プライバシーポリシー</a></li>
-    <li><a href="terms-ja.html">利用規約</a></li>
-    <li><a href="support-ja.html">サポート</a></li>
-  </ul>
-  <footer>Whizwheel is published by Naruberio LLC. Contact: <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
+    <h2 lang="ja">日本語</h2>
+    <div class="board" lang="ja">
+      <a class="tile" href="support-ja.html"><span lang="en">HELP</span><strong>サポート</strong><em>使い方とお問い合わせ先</em></a>
+      <a class="tile" href="privacy-policy-ja.html"><span lang="en">DATA</span><strong>プライバシーについて</strong><em>端末に残すものと残さないもの</em></a>
+      <a class="tile" href="terms-ja.html"><span lang="en">TERMS</span><strong>ご利用の条件</strong><em>飛行で結果を使う前に</em></a>
+    </div>
+  </main>
+  <footer>Naruberio LLC, developer of Whizwheel · <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
 </body>
 </html>

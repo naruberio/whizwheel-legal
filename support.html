@@ -3,39 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support — Whizwheel</title>
+  <title>Whizwheel — Support</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; }
-    h1, h2 { font-weight: 600; }
-    h2 { margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
-    a { color: #4B5563; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root { --bg: #F5F4EE; --ink: #111111; --band: #FFD21F; --card: #FFFFFF; --muted: #4A4A44; --rule: #D8D6CC; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000000; --ink: #F2F2EA; --card: #141414; --muted: #B8B8AE; --rule: #333333; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 -apple-system, system-ui, "Hiragino Sans", "Yu Gothic UI", sans-serif; overflow-wrap: anywhere; }
+    .band { background: var(--band); color: #111111; border-bottom: 4px solid #111111; padding: 18px 16px 20px; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .band nav { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; font-weight: 700; }
+    .band a { color: #111111; }
+    .band h1 { margin: 14px 0 2px; font-size: 2rem; line-height: 1.15; font-weight: 900; }
+    .band .rev { margin: 0; font-size: 0.9rem; }
+    main { max-width: 760px; margin: 24px auto 32px; padding: 0 16px; }
+    .lead { font-size: 1.05rem; margin: 0 0 24px; }
+    section { background: var(--card); border: 3px solid var(--ink); margin: 0 0 20px; padding: 0 18px 12px; }
+    section > h2 { margin: 0 -18px 12px; padding: 8px 18px; background: var(--band); color: #111111; border-bottom: 3px solid var(--ink); font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 900; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+    tr:last-child th, tr:last-child td { border-bottom: 0; }
+    th { width: 22%; padding-right: 12px; font-weight: 900; letter-spacing: 0.04em; white-space: nowrap; }
+    code { font: 0.95em ui-monospace, "SF Mono", Menlo, Consolas, monospace; background: var(--bg); padding: 0 4px; }
     ul { padding-left: 1.2rem; }
-    .meta { color: #666; font-size: 0.95rem; }
-    footer { margin-top: 3rem; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    li { margin: 0.45rem 0; }
+    a { color: inherit; text-underline-offset: 2px; }
+    time { white-space: nowrap; }
+    footer { max-width: 760px; margin: 0 auto 40px; padding: 0 16px; font-size: 0.85rem; color: var(--muted); }
   </style>
 </head>
 <body>
-  <p class="meta"><a href="index.html">&larr; Legal &amp; Support</a> | <a href="support-ja.html">日本語</a></p>
-  <h1>Support — Whizwheel</h1>
-  <p class="meta">Updated: 2026-10-03</p>
+  <header class="band">
+    <div class="wrap">
+      <nav><a href="index.html">Whizwheel: all pages</a><a href="support-ja.html" lang="ja">日本語で読む</a></nav>
+      <h1>Support</h1>
+      <p class="rev">Whizwheel for iPhone and iPad · last revised <time datetime="2026-10-19">2026-10-19</time></p>
+    </div>
+  </header>
+  <main>
+    <p class="lead">Whizwheel opens on a board of twelve tools. Tap one, type the figures you already have, and the answer updates with every keystroke. Nothing needs a connection, so it behaves the same on the ramp and in airplane mode.</p>
 
-  <h2>How to use</h2>
-  <ol>
-    <li>Open the App. The first screen lists all nine tools; nothing is hidden behind a menu.</li>
-    <li>Pick a tool and type the values you have. Results appear as you type.</li>
-    <li>For weight and balance, add your stations, enter the limits, then save the aircraft profile so it is one tap away next time.</li>
-  </ol>
+    <section>
+      <h2>The board</h2>
+      <table>
+        <tr><th>WIND</th><td>Wind correction angle, heading and ground speed; or the wind itself from what you flew. Runway components. Add the magnetic variation and it also gives the magnetic course and heading.</td></tr>
+        <tr><th>TAS</th><td>Calibrated, true and equivalent airspeed and Mach.</td></tr>
+        <tr><th>DA</th><td>Pressure and density altitude, plus the cold-temperature correction and true altitude.</td></tr>
+        <tr><th>TSD</th><td>Time, speed or distance from the other two.</td></tr>
+        <tr><th>TIME</th><td>Adding and subtracting flight times in hours, minutes and seconds.</td></tr>
+        <tr><th>FUEL</th><td>Fuel required for a given time, endurance, and what the fuel weighs.</td></tr>
+        <tr><th>W&amp;B</th><td>Moment, centre of gravity and limits, with aircraft profiles you can save.</td></tr>
+        <tr><th>DES</th><td>Where to start down and the descent rate, from a gradient in ft/nm, % or degrees; the climb rate a SID or missed-approach gradient asks for.</td></tr>
+        <tr><th>HOLD</th><td>Which holding entry to fly: direct, teardrop or parallel.</td></tr>
+        <tr><th>PNR</th><td>Point of no return and equal time point, with different ground speeds out and back.</td></tr>
+        <tr><th>1:60</th><td>From distance flown, distance off course and distance remaining: track error, closing angle and the turn to fly direct, solved with trigonometry rather than the 1-in-60 shortcut.</td></tr>
+        <tr><th>CONV</th><td>Distance, speed, weight, volume, pressure and temperature.</td></tr>
+      </table>
+    </section>
 
-  <h2>FAQ</h2>
-  <p><strong>Why do the numbers differ slightly from my mechanical E6B or a rule of thumb?</strong><br>Whizwheel solves the equations rather than the approximations. Density altitude comes from the standard atmosphere rather than &quot;120 ft per degree above ISA&quot;, and true airspeed accounts for compressibility rather than &quot;2% per thousand feet&quot;. At 5,000 ft and 30 °C the density altitude differs by roughly 190 ft; at 250 kt calibrated, FL250 and −35 °C the true airspeed differs by about 12 kt.</p>
-  <p><strong>Can I use it with no signal?</strong><br>Yes, always. The App contains no network code, so coverage makes no difference.</p>
-  <p><strong>Where are my aircraft profiles kept?</strong><br>On this device only. They are not synced, backed up to us, or transmitted anywhere. Deleting the App deletes them.</p>
-  <p><strong>Can I use it in an FAA knowledge test?</strong><br>No. Personal electronic devices are not allowed in the testing room. Use an approved mechanical E6B or the one supplied at the test centre.</p>
-  <p><strong>Why is there no map, weather or flight plan?</strong><br>Whizwheel is a calculator. Keeping it to calculation is what lets it work offline, ask for no permissions, and stay a single purchase.</p>
+    <section>
+      <h2>Moving a figure to the next tool</h2>
+      <p>Some answers are the input of the next problem. When one is available, the next tool shows a button naming the value and the tool it came from. Tap it to fill the field; until you do, nothing is changed for you. The four hand-offs are:</p>
+      <ul>
+        <li>pressure altitude (and temperature, if entered) from DA to TAS</li>
+        <li>true airspeed from TAS to WIND</li>
+        <li>ground speed from WIND to TSD</li>
+        <li>leg time from TSD to FUEL</li>
+      </ul>
+      <p>Each hand-off holds only its most recent figure, and all of them are gone when the App is closed.</p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a>. We usually reply within a few business days. Please include your iOS version and device model, and what you were doing when the problem happened.</p>
-  <footer>Whizwheel is published by Naruberio LLC. Contact: <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
+    <section>
+      <h2>Typing a time</h2>
+      <p>The time fields in TSD, FUEL and PNR read a plain number as minutes: <code>45</code> is 45 minutes and <code>8.5</code> is 8 minutes 30 seconds. A colon switches to hours: <code>8:56</code> is 8 hours 56 minutes, so 8 minutes 56 seconds is <code>0:08:56</code>. Under the field the App spells out what it understood, so a slip shows straight away.</p>
+      <p>The TIME tool, which adds or subtracts two flight times, reads a plain number differently: there it is hours (<code>1.5</code> is 1:30:00), and minutes take a colon (<code>0:45</code>). Anything written with a colon means the same on every screen.</p>
+    </section>
+
+    <section>
+      <h2>When a figure disagrees with a rule of thumb</h2>
+      <p>Cockpit rules of thumb are approximations. Whizwheel solves the underlying equations instead: density altitude from the standard atmosphere rather than 120 ft per degree above ISA, true airspeed with compressibility rather than 2% per thousand feet. At 5,000 ft and 30 °C that is about 190 ft of density altitude; at 250 kt calibrated, FL250 and −35 °C, about 12 kt of true airspeed. For the cold-temperature correction it uses the ICAO Doc 8168 equation, not 4% per 10 °C.</p>
+      <p>Gaps of that size are expected only for density altitude and true airspeed set against those rules. Any other difference, or a larger one, may be a fault: please write to us with the tool, every figure on the screen, and where your own figure came from (a POH table, a mechanical E6B, a test question).</p>
+    </section>
+
+    <section>
+      <h2>Aircraft profiles</h2>
+      <p>Weight-and-balance profiles live in Whizwheel's storage on this device. Whizwheel never syncs or sends them anywhere, and removing the App removes them. The privacy notice lists what a profile holds and how an iOS device backup may include it.</p>
+    </section>
+
+    <section>
+      <h2>Knowledge tests</h2>
+      <p>Phones and tablets stay outside the FAA testing room, so Whizwheel cannot go in with you. Take an approved flight computer, or use the one the test centre provides.</p>
+    </section>
+
+    <section>
+      <h2>What it leaves out</h2>
+      <p>No maps, weather, navigation log or flight plan filing. Keeping to calculation is why it needs no network, asks for no permissions and is a single purchase.</p>
+    </section>
+
+    <section>
+      <h2>Writing to us</h2>
+      <p><a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a>. A reply normally comes within a few business days. Mentioning your device and iOS version saves a round trip.</p>
+    </section>
+  </main>
+  <footer>Naruberio LLC, developer of Whizwheel · <a href="mailto:konpei.work@gmail.com">konpei.work@gmail.com</a></footer>
 </body>
 </html>
