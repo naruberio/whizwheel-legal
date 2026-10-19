@@ -71,7 +71,7 @@
         <li>ground speed from WIND to TSD</li>
         <li>leg time from TSD to FUEL</li>
       </ul>
-      <p>Each hand-off holds only its most recent figure, and all of them are gone when the App is closed.</p>
+      <p>Each hand-off holds only its most recent value (for DA to TAS, the most recent pair), and all of them are gone when the App is closed.</p>
     </section>
 
     <section>
@@ -82,13 +82,13 @@
 
     <section>
       <h2>When a figure disagrees with a rule of thumb</h2>
-      <p>Cockpit rules of thumb are approximations. Whizwheel solves the underlying equations instead: density altitude from the standard atmosphere rather than 120 ft per degree above ISA, true airspeed with compressibility rather than 2% per thousand feet. At 5,000 ft and 30 °C that is about 190 ft of density altitude; at 250 kt calibrated, FL250 and −35 °C, about 12 kt of true airspeed. For the cold-temperature correction it uses the ICAO Doc 8168 equation, not 4% per 10 °C.</p>
-      <p>Gaps of that size are expected only for density altitude and true airspeed set against those rules. Any other difference, or a larger one, may be a fault: please write to us with the tool, every figure on the screen, and where your own figure came from (a POH table, a mechanical E6B, a test question).</p>
+      <p>Cockpit rules of thumb are approximations. Whizwheel solves the underlying equations instead: density altitude from the standard atmosphere rather than 120 ft per degree above ISA, true airspeed with compressibility rather than 2% per thousand feet. At 5,000 ft and 30 °C that is about 190 ft of density altitude; at 250 kt calibrated, FL250 and −35 °C, about 12 kt of true airspeed. The cold-temperature correction uses the ICAO Doc 8168 equation rather than 4% per 10 °C, and the 1:60 tool uses trigonometry rather than the 1-in-60 shortcut. For these four, a gap against the rule of thumb is expected, and it grows with altitude, temperature or angle; the figures above are examples, not limits.</p>
+      <p>To check one of those four, compare it with a table or a full calculation for the same conditions, not with the rule of thumb. If it still differs, or another tool disagrees with your own working by more than rounding, it may be a fault: please write to us with the tool, every figure on the screen, and where your own figure came from (a POH table, a mechanical E6B, a test question).</p>
     </section>
 
     <section>
       <h2>Aircraft profiles</h2>
-      <p>Weight-and-balance profiles live in Whizwheel's storage on this device. Whizwheel never syncs or sends them anywhere, and removing the App removes them. The privacy notice lists what a profile holds and how an iOS device backup may include it.</p>
+      <p>Weight-and-balance profiles live in Whizwheel's storage on this device. Whizwheel never syncs or sends them anywhere, and removing the App removes them. The <a href="privacy-policy.html">privacy notice</a> lists what a profile holds and how an iOS device backup may include it.</p>
     </section>
 
     <section>
